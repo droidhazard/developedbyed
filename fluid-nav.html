@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Navbar</title>
+  <link rel="stylesheet" href="./fluid-nav.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>DROID</h1>
+      <ul>
+        <li><a data-page="home" href="#">Home</a></li>
+        <li><a data-page="projects" href="#">Projects</a></li>
+        <li><a data-page="contact" href="#">Contact</a></li>
+        <div class="bubble"></div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section data-index="0" class="home">
+      <h2>HOME</h2>
+    </section>
+    <section data-index="1" class="projects">
+      <h2>PROJECTS</h2>
+    </section>
+    <section data-index="2" class="contact">
+      <h2>CONTACT</h2>
+    </section>
+  </main>
+  
+
+  <script src="./fluid-nav.js"></script>
+</body>
+</html>
