@@ -24,6 +24,8 @@ h2 {
   left: 0;
   height: 8px;
   background: linear-gradient(to right, #ff5f6d, #ffc371);
-  width: 20%;
+  background: linear-gradient(to right, #00e676, #c6ff00);
+  width: 0%;
   z-index: 100;
+  transition: all 0.2s ease-out;
 }
