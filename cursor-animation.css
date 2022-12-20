@@ -9,8 +9,8 @@ body {
   cursor: none;
 }
 
-nav {
-  z-index: -3;
+#nav-link {
+  z-index: 2;
 }
 
 
@@ -20,11 +20,12 @@ nav {
   border: 2px solid black;
   border-radius: 50%;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: all 0.2s ease-out;
   transform-origin: -50% 0%;
+  backdrop-filter: grayscale();
 }
 
 .link-grow {
@@ -34,4 +35,9 @@ nav {
 
 .hovered-link {
   color: white;
+}
+
+.front-cover {
+  position: relative;
+  z-index: -3;
 }
