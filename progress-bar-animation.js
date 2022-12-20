@@ -7,6 +7,9 @@ const animateProgressBar = () => {
   progressBar.style.width = `${progressWidth}%`
   // console.log(scrollDistance, progressWidth)
   // console.log(section.getBoundingClientRect())
+  if (progressWidth < 0) {
+    progressBar.style.width = '0%'
+  }
 }
 
 window.addEventListener('scroll', animateProgressBar)
